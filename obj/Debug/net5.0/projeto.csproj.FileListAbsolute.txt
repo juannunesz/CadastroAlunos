@@ -1,0 +1,16 @@
+/home/juan/git/projeto/bin/Debug/net5.0/projeto
+/home/juan/git/projeto/bin/Debug/net5.0/projeto.deps.json
+/home/juan/git/projeto/bin/Debug/net5.0/projeto.runtimeconfig.json
+/home/juan/git/projeto/bin/Debug/net5.0/projeto.runtimeconfig.dev.json
+/home/juan/git/projeto/bin/Debug/net5.0/projeto.dll
+/home/juan/git/projeto/bin/Debug/net5.0/ref/projeto.dll
+/home/juan/git/projeto/bin/Debug/net5.0/projeto.pdb
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.csprojAssemblyReference.cache
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.GeneratedMSBuildEditorConfig.editorconfig
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.AssemblyInfoInputs.cache
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.AssemblyInfo.cs
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.csproj.CoreCompileInputs.cache
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.dll
+/home/juan/git/projeto/obj/Debug/net5.0/ref/projeto.dll
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.pdb
+/home/juan/git/projeto/obj/Debug/net5.0/projeto.genruntimeconfig.cache
