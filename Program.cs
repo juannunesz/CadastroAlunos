@@ -6,6 +6,11 @@ namespace projeto
     {
         static void Main(string[] args)
         {
+            
+            Aluno[] alunos = new Aluno[5];
+
+            var indiceAluno =  0; 
+
             string opcaoUsuario = obterOpacaoUsuario();
 
             while (opcaoUsuario.ToUpper() != "x")
@@ -14,12 +19,35 @@ namespace projeto
                 {
                     case "1":
                         //TODO: Adicionar aluno
-                        Console.WriteLine("Adicionando Auluno");
+                        Aluno aluno =  new Aluno();
+                        Console.WriteLine("Informe o nome do aluno:");
+                        aluno.Nome = Console.ReadLine();
+                       
+                        Console.WriteLine("Informe a nota do aluno:");
+
+                        if(decimal.TryParse(Console.ReadLine(),out decimal nota))
+                        {
+                            aluno.Nota = nota;
+                        }
+                        else
+                        {
+                            throw new ArgumentException("Valor de nota deve ser decimal");
+                        }
+
+                        alunos[indiceAluno] = aluno;
+                        indiceAluno++;
+                        
                         break;
 
                     case "2":
                         //TOdO: Listar alunos
-                        Console.WriteLine("Listando Alunos");
+                        foreach(var a in alunos)
+                        {
+                            if(!a.Nome.Equals("")){
+                                Console.WriteLine($"ALUNO: {a.Nome} - NOTA: {a.Nota}");
+                            }
+                            
+                        }
                         break;
 
                     case "3":
@@ -40,6 +68,7 @@ namespace projeto
 
         private static string obterOpacaoUsuario()
         {
+            Console.WriteLine();
             Console.WriteLine("Informe a opção desejada:");
             Console.WriteLine("1- Inserir novo aluno");
             Console.WriteLine("2- Listar Alunos");
@@ -48,6 +77,8 @@ namespace projeto
             Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine();
+
+            Console.WriteLine();
 
             return opcaoUsuario;
         }
